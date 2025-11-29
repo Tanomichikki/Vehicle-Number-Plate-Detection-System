@@ -74,10 +74,10 @@ The processed data is stored in a MySQL database (XAMPP) for retrieval, analytic
 
 **1. Clone this repository**
 ```bash
-git clone https://github.com/your-username/ANPR-YOLOv11.git
+git clone https://github.com/your-username/Vehicle-Number-Plate-Detection-System.git
 ```
 ```bash
-cd ANPR-YOLOv11
+cd Vehicle-Number-Plate-Detection-System
 ```
 
 **2. Install Python dependencies**
@@ -107,7 +107,7 @@ No extra setup needed — PaddleOCR downloads its model automatically.
 Create a database:
 
 ```sql
-CREATE DATABASE anpr_system;
+CREATE DATABASE anpr_database;
 ```
 
 **Create a table:**
