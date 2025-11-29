@@ -4,11 +4,15 @@
   <img src="https://github.com/Tanomichikki/Vehicle-Number-Plate-Detection-System/blob/main/license-plate.jpg" width="60%" />
 </p>
 
+
+
 ### 1. Overview
 
 This project is an Automatic Number Plate Detection and OCR System designed for real-time applications such as traffic surveillance, law enforcement, tolling, and parking automation.
 It uses YOLO v11 (Ultralytics) for number plate detection and PaddleOCR for extracting alphanumeric text from the detected plates.
 The processed data is stored in a MySQL database (XAMPP) for retrieval, analytics, or system integration.
+
+
 
 ### 2. Key Features
 
@@ -26,11 +30,15 @@ The processed data is stored in a MySQL database (XAMPP) for retrieval, analytic
 
 - Scalable for smart-city and security applications
 
+
+
 ### 3. Architecture
 
 <p align="center">
   <img src="https://github.com/Tanomichikki/Vehicle-Number-Plate-Detection-System/blob/main/Architecture-Design.png" width="70%" />
 </p>
+
+
 
 ### 4. Tech Stack
 
@@ -61,8 +69,8 @@ The processed data is stored in a MySQL database (XAMPP) for retrieval, analytic
 </p>
 
 
-### 5. Installation & Setup
 
+### 5. Installation & Setup
 
 **1. Clone this repository**
 ```bash
@@ -78,8 +86,9 @@ pip install ultralytics paddlepaddle paddleocr opencv-python mysql-connector-pyt
 
 **⚠️ For GPU acceleration, install the CUDA version of PaddlePaddle.**
 
-### 6. Model Setup
 
+
+### 6. Model Setup
 
 **1. YOLO v11 Model**
 
@@ -116,6 +125,8 @@ CREATE TABLE plates (
 config/db_config.py
 ```
 
+
+
 ### 7. Usage
 
 **Run detection on images**
@@ -139,6 +150,8 @@ python detect.py --realtime
 
 - Outputs are saved under /output/
 
+
+
 ### 8. Dataset
 
 - Custom dataset manually annotated for number plates
@@ -153,6 +166,8 @@ python detect.py --realtime
 ```bash
 yolo train model=yolov11n.pt data=data.yaml epochs=100 imgsz=640
 ```
+
+
 
 ### 9. Results
 
